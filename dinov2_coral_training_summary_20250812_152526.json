@@ -1,0 +1,18 @@
+{
+  "coral_splits": {
+    "train_corals": 1706,
+    "val_corals": 362,
+    "test_corals": 372
+  },
+  "dataset_sizes": {
+    "train_triplets": 17320,
+    "val_triplets": 3655,
+    "test_triplets": 3700
+  },
+  "final_performance": {
+    "best_val_loss": 0.14303703204445217,
+    "test_loss": 0.1659139764719996,
+    "test_accuracy": 0.9261853448275862,
+    "best_model_path": "dinov2_coral_best_model_20250812_152526.pt"
+  }
+}
