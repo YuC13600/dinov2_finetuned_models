@@ -1,0 +1,421 @@
+================================================================================
+BENCHMARK RESULTS FOR MODEL: 20250812_152526
+Mode: BBox Cropping
+Generated: 2025-10-17 16:36:59
+================================================================================
+
+
+================================================================================
+Comparison: dinov2_finetuned_2022_37_cropped_features.h5 vs dinov2_finetuned_2023_37_cropped_features.h5
+================================================================================
+Reference set model: dinov2_finetuned_coral, feature dim: 1280
+Query set model: dinov2_finetuned_coral, feature dim: 1280
+Reference set contains 32 coral feature vectors
+Query set contains 32 coral feature vectors
+
+--------- Detailed Ranking Results (Cosine Similarity) ---------
+37.16 Ranking: 4 (Cosine Similarity: 0.7071)
+37.24 Ranking: 4 (Cosine Similarity: 0.8861)
+37.32 Ranking: 1 (Cosine Similarity: 0.9729)
+37.37 Ranking: 1 (Cosine Similarity: 0.5064)
+37.20 Ranking: 13
+37.23 Ranking: 1 (Cosine Similarity: 0.8699)
+37.26 Ranking: 2 (Cosine Similarity: 0.6802)
+37.38 Ranking: 1 (Cosine Similarity: 0.4544)
+37.1 Ranking: 1 (Cosine Similarity: 0.8550)
+37.5 Ranking: 1 (Cosine Similarity: 0.7539)
+37.39 Ranking: 1 (Cosine Similarity: 0.5430)
+37.14 Ranking: 21
+37.21 Ranking: 2 (Cosine Similarity: 0.4972)
+37.6 Ranking: 1 (Cosine Similarity: 0.7067)
+37.7 Ranking: 1 (Cosine Similarity: 0.9725)
+37.25 Ranking: 4 (Cosine Similarity: 0.2613)
+37.30 Ranking: 1 (Cosine Similarity: 0.8465)
+37.35 Ranking: 1 (Cosine Similarity: 0.7824)
+37.4 Ranking: 4 (Cosine Similarity: 0.5084)
+37.27 Ranking: 1 (Cosine Similarity: 0.8537)
+37.2 Ranking: 1 (Cosine Similarity: 0.6499)
+37.15 Ranking: 13
+37.36 Ranking: 12
+37.33 Ranking: 1 (Cosine Similarity: 0.9055)
+37.40 Ranking: 3 (Cosine Similarity: 0.4804)
+37.19 Ranking: 3 (Cosine Similarity: 0.9355)
+37.28 Ranking: 4 (Cosine Similarity: 0.5274)
+37.31 Ranking: 6
+37.8 Ranking: 28
+37.22 Ranking: 8
+37.13 Ranking: 1 (Cosine Similarity: 0.6807)
+37.3 Ranking: 1 (Cosine Similarity: 0.9699)
+
+--------- Statistical Analysis ---------
+Average rank: 4.59
+Median rank: 1.5
+Rank 1 ratio: 50.00% (16/32)
+Top 3 ratio: 62.50% (20/32)
+Top 5 ratio: 78.12% (25/32)
+Top 10 ratio: 84.38% (27/32)
+
+Ranking distribution:
+  Rank 1: 16 samples (50.00%)
+  Rank 2: 2 samples (6.25%)
+  Rank 3: 2 samples (6.25%)
+  Rank 4: 5 samples (15.62%)
+  Rank 6: 1 samples (3.12%)
+  Rank 8: 1 samples (3.12%)
+  Rank 12: 1 samples (3.12%)
+  Rank 13: 2 samples (6.25%)
+  Rank 21: 1 samples (3.12%)
+  Rank 28: 1 samples (3.12%)
+
+Worst rank: 28
+Best rank: 1
+Standard deviation: 6.26
+
+STDERR:
+
+Processing:   0%|          | 0/32 [00:00<?, ?it/s]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.16 Rank: 4]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.24 Rank: 4]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.32 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.37 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.20 Rank: 13]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.23 Rank: 1] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.26 Rank: 2]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.38 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.1 Rank: 1] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.5 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.39 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.14 Rank: 21]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.21 Rank: 2] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.6 Rank: 1] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.7 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.25 Rank: 4]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.30 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.35 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.4 Rank: 4] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.27 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.2 Rank: 1] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.15 Rank: 13]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.36 Rank: 12]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.33 Rank: 1] 
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.40 Rank: 3]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.19 Rank: 3]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.28 Rank: 4]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.31 Rank: 6]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.8 Rank: 28]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.22 Rank: 8]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.13 Rank: 1]
+Processing:   0%|          | 0/32 [00:00<?, ?it/s, current=37.3 Rank: 1] 
+Processing: 100%|██████████| 32/32 [00:00<00:00, 3710.85it/s, current=37.3 Rank: 1]
+
+================================================================================
+Comparison: dinov2_finetuned_2022_38_cropped_features.h5 vs dinov2_finetuned_2023_38_cropped_features.h5
+================================================================================
+Reference set model: dinov2_finetuned_coral, feature dim: 1280
+Query set model: dinov2_finetuned_coral, feature dim: 1280
+Reference set contains 31 coral feature vectors
+Query set contains 31 coral feature vectors
+
+--------- Detailed Ranking Results (Cosine Similarity) ---------
+38.3 Ranking: 1 (Cosine Similarity: 0.6658)
+38.11 Ranking: 1 (Cosine Similarity: 0.9111)
+38.24 Ranking: 4 (Cosine Similarity: 0.8460)
+38.40 Ranking: 3 (Cosine Similarity: 0.6126)
+38.33 Ranking: 1 (Cosine Similarity: 0.8462)
+38.36 Ranking: 1 (Cosine Similarity: 0.9656)
+38.37 Ranking: 1 (Cosine Similarity: 0.8799)
+38.5 Ranking: 1 (Cosine Similarity: 0.6773)
+38.18 Ranking: 1 (Cosine Similarity: 0.9171)
+38.7 Ranking: 13
+38.15 Ranking: 1 (Cosine Similarity: 0.8856)
+38.1 Ranking: 2 (Cosine Similarity: 0.5239)
+38.20 Ranking: 1 (Cosine Similarity: 0.8097)
+38.8 Ranking: 6
+38.4 Ranking: 18
+38.30 Ranking: 2 (Cosine Similarity: 0.6500)
+38.25 Ranking: 1 (Cosine Similarity: 0.9558)
+38.16 Ranking: 1 (Cosine Similarity: 0.6228)
+38.38 Ranking: 4 (Cosine Similarity: 0.4401)
+38.10 Ranking: 1 (Cosine Similarity: 0.8309)
+38.17 Ranking: 1 (Cosine Similarity: 0.5241)
+38.19 Ranking: 7
+38.31 Ranking: 1 (Cosine Similarity: 0.7965)
+38.22 Ranking: 1 (Cosine Similarity: 0.8859)
+38.34 Ranking: 4 (Cosine Similarity: 0.3942)
+38.21 Ranking: 1 (Cosine Similarity: 0.8881)
+38.9 Ranking: 19
+38.26 Ranking: 2 (Cosine Similarity: 0.4474)
+38.27 Ranking: 3 (Cosine Similarity: 0.3808)
+38.2 Ranking: 5 (Cosine Similarity: 0.5078)
+38.6 Ranking: 4 (Cosine Similarity: 0.7864)
+
+--------- Statistical Analysis ---------
+Average rank: 3.61
+Median rank: 1.0
+Rank 1 ratio: 51.61% (16/31)
+Top 3 ratio: 67.74% (21/31)
+Top 5 ratio: 83.87% (26/31)
+Top 10 ratio: 90.32% (28/31)
+
+Ranking distribution:
+  Rank 1: 16 samples (51.61%)
+  Rank 2: 3 samples (9.68%)
+  Rank 3: 2 samples (6.45%)
+  Rank 4: 4 samples (12.90%)
+  Rank 5: 1 samples (3.23%)
+  Rank 6: 1 samples (3.23%)
+  Rank 7: 1 samples (3.23%)
+  Rank 13: 1 samples (3.23%)
+  Rank 18: 1 samples (3.23%)
+  Rank 19: 1 samples (3.23%)
+
+Worst rank: 19
+Best rank: 1
+Standard deviation: 4.65
+
+STDERR:
+
+Processing:   0%|          | 0/31 [00:00<?, ?it/s]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.3 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.11 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.24 Rank: 4]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.40 Rank: 3]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.33 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.36 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.37 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.5 Rank: 1] 
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.18 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.7 Rank: 13]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.15 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.1 Rank: 2] 
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.20 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.8 Rank: 6] 
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.4 Rank: 18]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.30 Rank: 2]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.25 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.16 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.38 Rank: 4]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.10 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.17 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.19 Rank: 7]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.31 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.22 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.34 Rank: 4]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.21 Rank: 1]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.9 Rank: 19]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.26 Rank: 2]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.27 Rank: 3]
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.2 Rank: 5] 
+Processing:   0%|          | 0/31 [00:00<?, ?it/s, current=38.6 Rank: 4]
+Processing: 100%|██████████| 31/31 [00:00<00:00, 3938.67it/s, current=38.6 Rank: 4]
+
+================================================================================
+Comparison: dinov2_finetuned_2022_39_cropped_features.h5 vs dinov2_finetuned_2023_39_cropped_features.h5
+================================================================================
+Reference set model: dinov2_finetuned_coral, feature dim: 1280
+Query set model: dinov2_finetuned_coral, feature dim: 1280
+Reference set contains 27 coral feature vectors
+Query set contains 27 coral feature vectors
+
+--------- Detailed Ranking Results (Cosine Similarity) ---------
+39.15 Ranking: 6
+39.25 Ranking: 15
+39.4 Ranking: 3 (Cosine Similarity: 0.3294)
+39.20 Ranking: 19
+39.32 Ranking: 1 (Cosine Similarity: 0.5992)
+39.6 Ranking: 1 (Cosine Similarity: 0.7664)
+39.12 Ranking: 2 (Cosine Similarity: 0.6936)
+39.31 Ranking: 1 (Cosine Similarity: 0.8098)
+39.8 Ranking: 3 (Cosine Similarity: 0.4345)
+39.1 Ranking: 1 (Cosine Similarity: 0.6262)
+39.17 Ranking: 19
+39.29 Ranking: 16
+39.2 Ranking: 1 (Cosine Similarity: 0.7744)
+39.9 Ranking: 25
+39.18 Ranking: 1 (Cosine Similarity: 0.8695)
+39.34 Ranking: 1 (Cosine Similarity: 0.9506)
+39.10 Ranking: 8
+39.21 Ranking: 1 (Cosine Similarity: 0.9613)
+39.16 Ranking: 1 (Cosine Similarity: 0.7743)
+39.11 Ranking: 12
+39.28 Ranking: 1 (Cosine Similarity: 0.8771)
+39.5 Ranking: 5 (Cosine Similarity: 0.8134)
+39.35 Ranking: 1 (Cosine Similarity: 0.9492)
+39.19 Ranking: 1 (Cosine Similarity: 0.7592)
+39.30 Ranking: 1 (Cosine Similarity: 0.9435)
+39.13 Ranking: 8
+39.14 Ranking: 10
+
+--------- Statistical Analysis ---------
+Average rank: 6.07
+Median rank: 2.0
+Rank 1 ratio: 48.15% (13/27)
+Top 3 ratio: 59.26% (16/27)
+Top 5 ratio: 62.96% (17/27)
+Top 10 ratio: 77.78% (21/27)
+
+Ranking distribution:
+  Rank 1: 13 samples (48.15%)
+  Rank 2: 1 samples (3.70%)
+  Rank 3: 2 samples (7.41%)
+  Rank 5: 1 samples (3.70%)
+  Rank 6: 1 samples (3.70%)
+  Rank 8: 2 samples (7.41%)
+  Rank 10: 1 samples (3.70%)
+  Rank 12: 1 samples (3.70%)
+  Rank 15: 1 samples (3.70%)
+  Rank 16: 1 samples (3.70%)
+  Rank 19: 2 samples (7.41%)
+  Rank 25: 1 samples (3.70%)
+
+Worst rank: 25
+Best rank: 1
+Standard deviation: 6.94
+
+STDERR:
+
+Processing:   0%|          | 0/27 [00:00<?, ?it/s]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.15 Rank: 6]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.25 Rank: 15]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.4 Rank: 3]  
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.20 Rank: 19]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.32 Rank: 1] 
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.6 Rank: 1] 
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.12 Rank: 2]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.31 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.8 Rank: 3] 
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.1 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.17 Rank: 19]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.29 Rank: 16]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.2 Rank: 1]  
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.9 Rank: 25]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.18 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.34 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.10 Rank: 8]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.21 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.16 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.11 Rank: 12]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.28 Rank: 1] 
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.5 Rank: 5] 
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.35 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.19 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.30 Rank: 1]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.13 Rank: 8]
+Processing:   0%|          | 0/27 [00:00<?, ?it/s, current=39.14 Rank: 10]
+Processing: 100%|██████████| 27/27 [00:00<00:00, 4063.37it/s, current=39.14 Rank: 10]
+
+================================================================================
+Comparison: dinov2_finetuned_2022_40_cropped_features.h5 vs dinov2_finetuned_2023_40_cropped_features.h5
+================================================================================
+Reference set model: dinov2_finetuned_coral, feature dim: 1280
+Query set model: dinov2_finetuned_coral, feature dim: 1280
+Reference set contains 37 coral feature vectors
+Query set contains 37 coral feature vectors
+
+--------- Detailed Ranking Results (Cosine Similarity) ---------
+40.28 Ranking: 5 (Cosine Similarity: 0.8258)
+40.23 Ranking: 1 (Cosine Similarity: 0.7654)
+40.50 Ranking: 32
+40.47 Ranking: 1 (Cosine Similarity: 0.6493)
+40.21 Ranking: 1 (Cosine Similarity: 0.8558)
+40.33 Ranking: 5 (Cosine Similarity: 0.6330)
+40.42 Ranking: 1 (Cosine Similarity: 0.8924)
+40.7 Ranking: 9
+40.12 Ranking: 5 (Cosine Similarity: 0.7913)
+40.41 Ranking: 28
+40.22 Ranking: 2 (Cosine Similarity: 0.5903)
+40.40 Ranking: 27
+40.20 Ranking: 1 (Cosine Similarity: 0.8482)
+40.29 Ranking: 6
+40.2 Ranking: 2 (Cosine Similarity: 0.4650)
+40.8 Ranking: 5 (Cosine Similarity: 0.4988)
+40.4 Ranking: 1 (Cosine Similarity: 0.9036)
+40.11 Ranking: 2 (Cosine Similarity: 0.8620)
+40.36 Ranking: 1 (Cosine Similarity: 0.6293)
+40.38 Ranking: 11
+40.27 Ranking: 19
+40.1 Ranking: 7
+40.43 Ranking: 11
+40.10 Ranking: 1 (Cosine Similarity: 0.8449)
+40.30 Ranking: 1 (Cosine Similarity: 0.9750)
+40.32 Ranking: 3 (Cosine Similarity: 0.5015)
+40.31 Ranking: 2 (Cosine Similarity: 0.7792)
+40.44 Ranking: 1 (Cosine Similarity: 0.8735)
+40.39 Ranking: 2 (Cosine Similarity: 0.8445)
+40.46 Ranking: 1 (Cosine Similarity: 0.7115)
+40.35 Ranking: 14
+40.34 Ranking: 3 (Cosine Similarity: 0.8711)
+40.6 Ranking: 1 (Cosine Similarity: 0.6321)
+40.37 Ranking: 1 (Cosine Similarity: 0.9141)
+40.15 Ranking: 1 (Cosine Similarity: 0.7356)
+40.19 Ranking: 1 (Cosine Similarity: 0.8302)
+40.49 Ranking: 1 (Cosine Similarity: 0.6577)
+
+--------- Statistical Analysis ---------
+Average rank: 5.84
+Median rank: 2.0
+Rank 1 ratio: 43.24% (16/37)
+Top 3 ratio: 62.16% (23/37)
+Top 5 ratio: 72.97% (27/37)
+Top 10 ratio: 81.08% (30/37)
+
+Ranking distribution:
+  Rank 1: 16 samples (43.24%)
+  Rank 2: 5 samples (13.51%)
+  Rank 3: 2 samples (5.41%)
+  Rank 5: 4 samples (10.81%)
+  Rank 6: 1 samples (2.70%)
+  Rank 7: 1 samples (2.70%)
+  Rank 9: 1 samples (2.70%)
+  Rank 11: 2 samples (5.41%)
+  Rank 14: 1 samples (2.70%)
+  Rank 19: 1 samples (2.70%)
+  Rank 27: 1 samples (2.70%)
+  Rank 28: 1 samples (2.70%)
+  Rank 32: 1 samples (2.70%)
+
+Worst rank: 32
+Best rank: 1
+Standard deviation: 8.05
+
+STDERR:
+
+Processing:   0%|          | 0/37 [00:00<?, ?it/s]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.28 Rank: 5]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.23 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.50 Rank: 32]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.47 Rank: 1] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.21 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.33 Rank: 5]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.42 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.7 Rank: 9] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.12 Rank: 5]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.41 Rank: 28]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.22 Rank: 2] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.40 Rank: 27]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.20 Rank: 1] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.29 Rank: 6]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.2 Rank: 2] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.8 Rank: 5]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.4 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.11 Rank: 2]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.36 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.38 Rank: 11]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.27 Rank: 19]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.1 Rank: 7]  
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.43 Rank: 11]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.10 Rank: 1] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.30 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.32 Rank: 3]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.31 Rank: 2]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.44 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.39 Rank: 2]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.46 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.35 Rank: 14]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.34 Rank: 3] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.6 Rank: 1] 
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.37 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.15 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.19 Rank: 1]
+Processing:   0%|          | 0/37 [00:00<?, ?it/s, current=40.49 Rank: 1]
+Processing: 100%|██████████| 37/37 [00:00<00:00, 3143.33it/s, current=40.49 Rank: 1]
