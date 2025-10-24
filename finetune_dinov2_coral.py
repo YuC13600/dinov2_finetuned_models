@@ -2,6 +2,47 @@
 """
 Fine-tune DINOv2 for coral identification using triplet loss
 Progressive fine-tuning approach with loss visualization
+
+Copyright (C) 2025 YuC13600
+This source code is licensed under the GPL-3.0 license.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Description:
+    This script fine-tunes DINOv2 ViT-B/14 for coral re-identification across multiple
+    years using triplet loss. The model learns 1280-dimensional embeddings that can
+    match individual corals photographed in different years.
+
+    Training uses a progressive unfreezing strategy:
+    - Phase 1: Train projection head only (20 epochs)
+    - Phase 2: Unfreeze last 2 transformer blocks (15 epochs)
+    - Phase 3: Unfreeze last 4 transformer blocks (12 epochs)
+
+    The script supports two negative selection strategies:
+    - Site-level negatives (default): 60% same site, 40% different site
+    - Area-level negatives (--same_area_negatives): Only same Tag negatives
+
+Usage:
+    # Train with bbox cropping and site-level negatives (default)
+    python finetune_dinov2_coral.py
+
+    # Train with whole images and same-area negatives
+    python finetune_dinov2_coral.py --use_whole_image --same_area_negatives
+
+    # IMPORTANT: Run from the coralscop conda environment
+    zsh -c "conda activate coralscop && python finetune_dinov2_coral.py"
+
+Input:
+    - annotated_imgs/: Training data organized by year (2021/, 2022/, 2023/, 2024/)
+    - Images must contain coral ID information in directory structure
+    - For bbox mode: Images must have bounding box data in EXIF XPComment field
+
+Output:
+    - dinov2_coral_best_model_{timestamp}.pt: Best validation model
+    - dinov2_coral_finetuned_final_{timestamp}.pt: Final model after all phases
+    - dinov2_coral_training_loss_{timestamp}.png: Loss and accuracy curves
+    - dinov2_coral_training_summary_{timestamp}.json: Training statistics
+    - dinov2_coral_training.log: Detailed training logs
 """
 
 import torch

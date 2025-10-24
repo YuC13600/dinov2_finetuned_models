@@ -2,6 +2,41 @@
 """
 Extract fine-tuned DINOv2 features from coral images in 2022sample and 2023sample directories
 Uses the coral-specific fine-tuned DINOv2 model (dinov2_coral_finetuned.pt)
+
+Copyright (C) 2025 YuC13600
+This source code is licensed under the GPL-3.0 license.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Description:
+    This script extracts 1280-dimensional features from coral images using a fine-tuned
+    DINOv2 model. It processes images from test directories organized by area and year,
+    with support for both bbox cropping and whole-image modes.
+
+    The extracted features can be compared across years to evaluate coral re-identification
+    performance. Feature extraction mode (bbox vs whole image) must match the mode used
+    during model training.
+
+Usage:
+    # Extract features using bbox cropping (for models trained with bbox)
+    python extract_dinov2_finetuned_features.py
+
+    # Extract features using whole images (for models trained with --use_whole_image)
+    python extract_dinov2_finetuned_features.py --use_whole_image
+
+    # IMPORTANT: Run from the coralscop conda environment
+    zsh -c "conda activate coralscop && python extract_dinov2_finetuned_features.py"
+
+Input:
+    - Fine-tuned model: dinov2_coral_finetuned_final_{timestamp}.pt
+    - 2022sample/ directory: Test images from 2022 organized by area (37, 38, 39, 40)
+    - 2023sample/ directory: Test images from 2023 organized by area (37, 38, 39, 40)
+    - For bbox mode: Images must have bounding box data in EXIF XPComment field
+
+Output:
+    - dinov2_finetuned_{year}_{area_id}_{cropped|whole}_features.h5
+    - Each file contains: 1280-dim features, coral_names, and metadata
+    - Feature files can be used with compare_dinov2_features.py for evaluation
 """
 
 import torch

@@ -14,3 +14,8 @@ Dinov2 models for Spect-coral project
 | 20251016_133229 | 16 | ❌ | whole image | 97.9% | 0.0429 | 63.31% | 56.25% | 58.06% | 74.07% | 64.86% | <hr> |
 
 > `N-Benchmark(Nearest Benchmark)`: The accuracy rate of identifying the nearest coral as the correct specimen when comparing coral data in areas 37-40 across 2022 and 2023.
+
+## License
+This project is licensed under GPL-3.0.
+
+This project is based on DINOv2 by Meta Platforms, Inc. and affiliates, which is licensed under Apache License 2.0. See LICENSE-DINOv2 for details.
