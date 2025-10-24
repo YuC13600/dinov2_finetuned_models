@@ -1,6 +1,35 @@
 #!/usr/bin/env python3
 """
 Extract DINOv2 ViT-B/14 features from coral images in 2022sample and 2023sample directories
+
+Copyright (C) 2025 YuC13600
+This source code is licensed under the GPL-3.0 license.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Description:
+    This script extracts baseline DINOv2 ViT-B/14 features (768-dimensional) from coral
+    images for comparison purposes. It processes images from test directories organized
+    by area and year, applying bounding box cropping based on EXIF metadata.
+
+    The extracted features serve as a baseline for evaluating the performance of
+    fine-tuned models against the vanilla DINOv2 model.
+
+Usage:
+    # Extract features from all test images
+    python extract_dinov2_features.py
+
+    # IMPORTANT: Run from the coralscop conda environment
+    zsh -c "conda activate coralscop && python extract_dinov2_features.py"
+
+Input:
+    - 2022sample/ directory: Test images from 2022 organized by area (37, 38, 39, 40)
+    - 2023sample/ directory: Test images from 2023 organized by area (37, 38, 39, 40)
+    - Images must have bounding box data in EXIF XPComment field
+
+Output:
+    - dinov2_{year}_{area_id}_features.h5: HDF5 files containing 768-dim feature vectors
+    - Each file includes: features array, coral_names, and metadata attributes
 """
 
 import torch

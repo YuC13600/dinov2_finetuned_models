@@ -1,6 +1,43 @@
 #!/usr/bin/env python3
 """
 Compare DINOv2 features using the same logic as multiple_features_comparison.py
+
+Copyright (C) 2025 YuC13600
+This source code is licensed under the GPL-3.0 license.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Description:
+    This script compares DINOv2 feature vectors extracted from coral images across
+    different years to evaluate coral re-identification performance. It computes
+    similarity rankings using either cosine similarity or Euclidean distance metrics.
+
+    The script supports batch comparison of HDF5 feature files and provides detailed
+    statistics including top-1/3/5/10 accuracy ratios, ranking distributions, and
+    per-coral ranking results.
+
+Usage:
+    # Using cosine similarity (default)
+    python compare_dinov2_features.py <reference_year_features.h5> <query_year_features.h5>
+
+    # Using Euclidean distance
+    python compare_dinov2_features.py <reference_year_features.h5> <query_year_features.h5> --euclidean
+
+    # Interactive mode
+    python compare_dinov2_features.py
+
+    # Example with actual files
+    python compare_dinov2_features.py dinov2_2022_37_features.h5 dinov2_2023_37_features.h5
+
+Input:
+    - Reference set: HDF5 file containing feature vectors from one year
+    - Query set: HDF5 file containing feature vectors from another year
+    - Both files must contain 'features' and 'coral_names' datasets
+
+Output:
+    - Detailed ranking results for each query coral
+    - Statistical metrics: average rank, median rank, top-N ratios
+    - Ranking distribution showing frequency of each rank position
 """
 
 import h5py

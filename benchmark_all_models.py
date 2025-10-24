@@ -1,11 +1,40 @@
 #!/usr/bin/env python3
 """
 Automated benchmarking script for all 6 DINOv2 fine-tuned models.
-This script will:
-1. For each model, update extract_dinov2_finetuned_features.py to load the correct model
-2. Run feature extraction (with or without --use_whole_image)
-3. Run comparisons for all 4 areas (37, 38, 39, 40) comparing 2022 vs 2023
-4. Save all output to {model_timestamp}_nearest_benchmark.txt
+
+Copyright (C) 2025 YuC13600
+This source code is licensed under the GPL-3.0 license.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Description:
+    This script automates the benchmarking process for all fine-tuned DINOv2 models.
+    For each model, it:
+    1. Updates extract_dinov2_finetuned_features.py to load the correct model
+    2. Runs feature extraction (with or without --use_whole_image flag)
+    3. Runs comparisons for all 4 areas (37, 38, 39, 40) comparing 2022 vs 2023
+    4. Saves all output to {model_timestamp}_nearest_benchmark.txt
+
+    The script maintains a backup of the extraction script and automatically restores
+    it after completion.
+
+Usage:
+    # Run benchmarking for all models
+    python benchmark_all_models.py
+
+    # IMPORTANT: Run from the coralscop conda environment
+    zsh -c "conda activate coralscop && python benchmark_all_models.py"
+
+Input:
+    - extract_dinov2_finetuned_features.py: Feature extraction script (will be modified)
+    - compare_dinov2_features.py: Comparison script
+    - dinov2_coral_finetuned_final_{timestamp}.pt: Model checkpoint files
+    - 2022sample/ and 2023sample/ directories: Test images
+
+Output:
+    - {model_timestamp}_nearest_benchmark.txt: Benchmark results for each model
+    - Feature files are generated during execution (optionally cleaned up)
+    - extract_dinov2_finetuned_features.py.backup: Backup of original script
 """
 
 import subprocess
