@@ -166,8 +166,8 @@ $\lambda = 10^{-4}$
 | **20251015_165008 (Final Model)** | 16 | ✅ | whole image | 92.7% | 0.1330 | 64.43% | 62.50% | 61.29% | 55.56% | 78.38% | <hr> |
 | 20251016_133229 | 16 | ❌ | whole image | 97.9% | 0.0429 | 63.31% | 56.25% | 58.06% | 74.07% | 64.86% | <hr> |
 
-> `Same Area Negative`: Only use corals from the same area as the Anchor and Positive as Negatives.
-> `N-Benchmark(Nearest Benchmark)`: Matching accuracy between 2022 and 2023 for Tag areas 37-40.
+> `Same Area Negative`: Only use corals from the same area as the Anchor and Positive as Negatives.  
+> `N-Benchmark(Nearest Benchmark)`: Matching accuracy between 2022 and 2023 for Tag areas 37-40.  
 
 ## Reference
 
