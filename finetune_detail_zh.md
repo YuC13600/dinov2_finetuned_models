@@ -136,12 +136,17 @@ $min\ lr = 10^{-6}$
 
 保持較小的權重避免overfitting。
 
-標準梯度下降:  
-$$ w_{new} = w_{old} - learning\ rate \times gradient $$  
-加上 weight decay:  
-$$ w_{new} = w_{old} - learning\ rate \times gradient - learning\ rate \times \lambda \times w_{old} $$  
-可以整理為  
-$$ w_{new} = (1 - learning\ rate \times \lambda) \times w_{old} - learning\ rate \times gradient $$  
+標準梯度下降:
+
+$$ w_{new} = w_{old} - learning\ rate \times gradient $$
+
+加上 weight decay:
+
+$$ w_{new} = w_{old} - learning\ rate \times gradient - learning\ rate \times \lambda \times w_{old} $$
+
+可以整理為
+
+$$ w_{new} = (1 - learning\ rate \times \lambda) \times w_{old} - learning\ rate \times gradient $$
 
 **參數:**
 
