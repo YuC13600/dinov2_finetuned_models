@@ -12,10 +12,15 @@ Dinov2 models for Spect-coral project
 | 20251008_234015 | 64 | ✅ | bbox | N/A | N/A | N/A | N/A | N/A | N/A | N/A | CUDA out of memory |
 | 20251014_183603 | 16 | ❌ | bbox | 92.8% | 0.1012 | 40.97% | 37.50% | 38.71% | 44.44% | 43.24% | <hr> |
 | Pre-trained Weight | <hr> | <hr> | whole image | <hr> | <hr> | 50.88% | 34.38% | 54.84% | 62.96% | 51.35% | <hr> |
-| 20251015_165008 | 16 | ✅ | whole image | 92.7% | 0.1330 | 64.43% | 62.50% | 61.29% | 55.56% | 78.38% | <hr> |
+| **20251015_165008 (Final Model)** | 16 | ✅ | whole image | 92.7% | 0.1330 | 64.43% | 62.50% | 61.29% | 55.56% | 78.38% | <hr> |
 | 20251016_133229 | 16 | ❌ | whole image | 97.9% | 0.0429 | 63.31% | 56.25% | 58.06% | 74.07% | 64.86% | <hr> |
 
 > `N-Benchmark(Nearest Benchmark)`: The accuracy rate of identifying the nearest coral as the correct specimen when comparing coral data in areas 37-40 across 2022 and 2023.
+
+## Documents
+
+[Finetune Details(zh-tw)](./finetune_detail_zh.md)
+[Finetune Details(en)](./finetune_detail.md)
 
 ## License
 This project is licensed under GPL-3.0.
