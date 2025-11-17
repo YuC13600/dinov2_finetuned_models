@@ -53,13 +53,13 @@ Embedding Output (1280)
 
 $$ L(A, P, N) = Max(\parallel f(A) - f(P) \parallel ^ 2 - \parallel f(A) - f(N) \parallel ^ 2 + \alpha, 0) $$
 
-> 公式推導:  
-> AP距離愈近愈好，AN距離愈遠愈好，所以  
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$  
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$  
-> 但這樣有可能會讓所有輸出的特徵都為零，或是距離相減都為零，所以通常會加一個間隔$\alpha$(Margin)  
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$  
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$  
+公式推導:  
+AP距離愈近愈好，AN距離愈遠愈好，所以  
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$  
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$  
+但這樣有可能會讓所有輸出的特徵都為零，或是距離相減都為零，所以通常會加一個間隔$\alpha$(Margin)  
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$  
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$  
 
 **參數:**
 
@@ -92,9 +92,9 @@ Mining Strategy: **Hard** ($AP距離-AN距離+\alpha > 0$)
 
 **參數:**
 
-$BATCH\_SIZE = 16$
+$batch\ size = 16$
 
-$accumulation\_steps = 8$
+$accumulation\ steps = 8$
 
 ### 5.2 Early Stopping
 
@@ -112,7 +112,7 @@ $delta = 0.0005$
 
 **參數:**
 
-$max\_norm = 1.0$
+$max\ norm = 1.0$
 
 ### 5.4 ReduceLROnPlateau
 
@@ -124,18 +124,18 @@ $factor = 0.5$
 
 $patience = 3$
 
-$min\_lr = 10^{-6}$
+$min\ lr = 10^{-6}$
 
 ### 5.5 Weight Decay
 
 保持較小的權重避免overfitting。
 
-標準梯度下降:
-$$ w_{new} = w_{old} - learning\ rate \times gradient $$
-加上 weight decay:
-$$ w_{new} = w_{old} - learning\ rate \times gradient - learning\ rate \times \lambda \times w_{old} $$
-可以整理為
-$$ w_{new} = (1 - learning\ rate \times \lambda) \times w_{old} - learning\ rate \times gradient $$
+標準梯度下降:  
+$$ w_{new} = w_{old} - learning\ rate \times gradient $$  
+加上 weight decay:  
+$$ w_{new} = w_{old} - learning\ rate \times gradient - learning\ rate \times \lambda \times w_{old} $$  
+可以整理為  
+$$ w_{new} = (1 - learning\ rate \times \lambda) \times w_{old} - learning\ rate \times gradient $$  
 
 **參數:**
 
