@@ -53,13 +53,19 @@ Embedding Output (1280)
 
 $$ L(A, P, N) = Max(\parallel f(A) - f(P) \parallel ^ 2 - \parallel f(A) - f(N) \parallel ^ 2 + \alpha, 0) $$
 
-公式推導:  
-AP距離愈近愈好，AN距離愈遠愈好，所以  
-$$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$  
-$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$  
-但這樣有可能會讓所有輸出的特徵都為零，或是距離相減都為零，所以通常會加一個間隔$\alpha$(Margin)  
-$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$  
-$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$  
+公式推導:
+
+AP距離愈近愈好，AN距離愈遠愈好，所以
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$
+
+但這樣有可能會讓所有輸出的特徵都為零，或是距離相減都為零，所以通常會加一個間隔Margin($\alpha$)
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$
 
 **參數:**
 
