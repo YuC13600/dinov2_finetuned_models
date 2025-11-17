@@ -53,19 +53,25 @@ Normalizes vectors to the unit hypersphere.
 
 $$ L(A, P, N) = Max(\parallel f(A) - f(P) \parallel ^ 2 - \parallel f(A) - f(N) \parallel ^ 2 + \alpha, 0) $$
 
-> Formula Derivation:
-> We want AP distance to be as small as possible and AN distance to be as large as possible, so
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$
-> However, this might cause all output features to become zero, or all distance differences to be zero. Therefore, we typically add a margin $\alpha$ to enforce separation:
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$
-> $$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$
+Formula Derivation:
+
+We want AP distance to be as small as possible and AN distance to be as large as possible, so
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ \le \ \parallel f(A) - f(N) \parallel ^ 2 $$
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le 0 $$
+
+However, this might cause all output features to become zero, or all distance differences to be zero. Therefore, we typically add a margin $\alpha$ to enforce separation:
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 \le - \alpha $$
+
+$$ \parallel f(A) - f(P) \parallel ^ 2 \ - \ \parallel f(A) - f(N) \parallel ^ 2 + \alpha \le 0 $$
 
 **Parameters:**
 
 $Margin(\alpha) = 0.3$
 
-Mining Strategy: **Hard** ($AP\ distance - AN\ distance + \alpha > 0$)
+Mining Strategy: **Hard** ($AP distance - AN distance + \alpha > 0$)
 
 > Three types of triplets:
 > 1. Easy Triplets: AN distance is greater than AP distance, and the difference exceeds the margin. A and P are already close enough and sufficiently far from N.
@@ -92,9 +98,9 @@ Therefore, the effective batch size is 128.
 
 **Parameters:**
 
-$BATCH\_SIZE = 16$
+$batch\ size = 16$
 
-$accumulation\_steps = 8$
+$accumulation\ steps = 8$
 
 ### 5.2 Early Stopping
 
@@ -131,10 +137,15 @@ $min\_lr = 10^{-6}$
 Maintains smaller weights to avoid overfitting.
 
 Standard gradient descent:
+
 $$ w_{new} = w_{old} - learning\ rate \times gradient $$
+
 With weight decay:
+
 $$ w_{new} = w_{old} - learning\ rate \times gradient - learning\ rate \times \lambda \times w_{old} $$
+
 This can be rearranged as:
+
 $$ w_{new} = (1 - learning\ rate \times \lambda) \times w_{old} - learning\ rate \times gradient $$
 
 **Parameters:**
@@ -156,7 +167,7 @@ $\lambda = 10^{-4}$
 | 20251016_133229 | 16 | ❌ | whole image | 97.9% | 0.0429 | 63.31% | 56.25% | 58.06% | 74.07% | 64.86% | <hr> |
 
 > `Same Area Negative`: Only use corals from the same area as the Anchor and Positive as Negatives.
-> `N-Benchmark (Nearest Benchmark)`: Matching accuracy between 2022 and 2023 for Tag areas 37-40.
+> `N-Benchmark(Nearest Benchmark)`: Matching accuracy between 2022 and 2023 for Tag areas 37-40.
 
 ## Reference
 
